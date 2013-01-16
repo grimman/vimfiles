@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " Enable pathogen bundle manager
 call pathogen#infect()
 
@@ -6,7 +8,10 @@ let mapleader=","
 nmap <silent> <leader>ev :e $myvimrc<CR>
 
 " Automatically reload .vimrc
-au! BufWritePost .vimrc source %
+augroup AutoReloadVimRC
+    au!
+    au BufWritePost $myvimrc source %
+augroup end
 
 " Some visual settings
 set guifont=Consolas:h12:cDEFAULT
@@ -43,7 +48,10 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround          " Indent based on shiftwidth when using <>
 set expandtab           " Convert tabs to spaces on insert
+set autoindent
 
 set nobackup
 set nowritebackup
 set noswapfile
+
+set backspace=2         " Let backspace work like in other apps
