@@ -8,7 +8,7 @@ I thought would be necessary.
 
 Resources
 =========
-[VimBits.com](http://vimbits.com/)
-[vim.wikia.com](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
-[IBM developerWorks](http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html)
+[VimBits.com](http://vimbits.com/)  
+[vim.wikia.com](http://vim.wikia.com/wiki/Vim_Tips_Wiki)  
+[IBM developerWorks](http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html)  
 [Vim documentation](http://vimdoc.sourceforge.net/htmldoc/)
