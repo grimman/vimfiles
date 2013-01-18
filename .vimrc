@@ -3,9 +3,11 @@ set encoding=utf-8
 " Enable pathogen bundle manager
 call pathogen#infect()
 
-" Map leader to comma and map :e .vimrc
+" Key mappings
 let mapleader=","
 nmap <silent> <leader>ev :e $myvimrc<CR>
+nmap <silent> <leader>1 :so $home/.vim/Session.vim<CR>
+nmap <silent> <leader>w1 :mks! $home/.vim/Session.vim<CR>
 
 " Automatically reload .vimrc
 augroup AutoReloadVimRC
