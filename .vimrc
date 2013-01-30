@@ -1,13 +1,22 @@
 set encoding=utf-8
 
 " Enable pathogen bundle manager
+filetype off
 call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+syntax on
 
 " Key mappings
 let mapleader=","
 nmap <silent> <leader>ev :e $myvimrc<CR>
 nmap <silent> <leader>1 :so $home/.vim/Session.vim<CR>
 nmap <silent> <leader>w1 :mks! $home/.vim/Session.vim<CR>
+nmap <silent> <leader>nt :NERDTree<CR>
+nmap <C-S> :update<CR>
+vnoremap <leader>s :sort<CR>
+cnoreabbrev Q q
+vnoremap <Tab> :sort<CR>
 
 " Automatically reload .vimrc
 augroup AutoReloadVimRC
@@ -16,12 +25,15 @@ augroup AutoReloadVimRC
 augroup end
 
 " Some visual settings
-set guifont=Consolas:h12:cDEFAULT
+set guifont=Consolas\ for\ Powerline\ FixedD:h12:cDEFAULT
 syntax on
 set background=dark
 colorscheme solarized
 set visualbell
 set noerrorbells
+
+set laststatus=2        " Enable Powerline
+let g:Powerline_symbols = 'fancy'
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
@@ -57,3 +69,5 @@ set nowritebackup
 set noswapfile
 
 set backspace=2         " Let backspace work like in other apps
+
+set sessionoptions-=options
