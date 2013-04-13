@@ -47,6 +47,18 @@ if has("gui_running")
     set lines=50 columns=110
 endif
 
+" Bundles:
+" Bundle 'gmarik/vundle'  " Vundle manages Vundle!
+" 
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'klen/python-mode'
+" Bundle 'ervandew/supertab'
+" Bundle 'altercation/vim-colors-solarized'
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'nathanaelkane/vim-indent-guides'
+" Bundle 'Lokaltog/vim-powerline'
+" Bundle 'mattn/zencoding-vim'
+
 " Display line numbers and add a 80 character marker
 set number
 set colorcolumn=80
